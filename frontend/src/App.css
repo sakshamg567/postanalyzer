@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2c3e50; /* Dark greyish background */
+  color: #d3d3d3; /* Light greyish text */
+}
+
+.navbar {
+  position: fixed;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  background-color: #296270;  
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 10px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  color: #d3d3d3;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: color 0.3s;
+  padding: 0.5rem 1rem;  /* Reduced padding to decrease button size */
+}
+
+.nav-links button:hover {
+  color: #ffffff;
+}
+
+/* General Content Padding */
+.content {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.home-section, .analysis-section, .about-us-section, .tech-section {
+  padding: 4rem 2rem;
+  border-bottom: 1px solid #555; /* Subtle separator */
+  background-color: #2c3e50; /* Darker background for sections */
+}
+
+/* Home Section */
+.home-section h1 {
+  font-size: 3.5rem; /* Larger title for impact */
+  color: #ffffff; /* Brighter title color */
+  margin-bottom: 1rem; /* Spacing below title */
+}
+
+.home-section p {
+  font-size: 1.2rem;
+  color: #bbbbbb; /* Slightly darker than title */
+  margin-top: 1rem;
+}
+
+.home-section .analyze-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.25rem;
+  background-color: #296270;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border-radius: 7px;
+  border-color: #ffffff;
+  box-shadow: 3px 2px 2px #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.home-section .analyze-button:hover {
+  background-color: #005b4f; /* Darker shade on hover */
+  color: #ffffff; /* Keep text color white on hover */
+}
+
+/* Video Section Styling */
+.video-container {
+  margin-top: 2rem;
+}
+
+video {
+  width: 80%;
+  max-width: 800px;
+  border: 2px solid #555;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* About Us Section */
+.about-us-section {
+  text-align: center;
+}
+
+.about-us-section h2 {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.about-us-section p {
+  font-size: 1.4rem;
+  color: #bbbbbb;
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+
+/* Analysis Section */
+.analysis-section {
+  padding: 4rem 2rem;
+  background-color: #2c3e50; /* Darker background */
+  color: #ffffff;
+}
+
+/* Button Hover Effect */
+.analyze-button:hover {
+  background-color: #005b4f;
+  color: #ffffff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .home-section, .analysis-section, .about-us-section, .tech-section {
+    padding: 2rem 1rem;
+  }
+
+  .home-section h1 {
+    font-size: 2.5rem; /* Smaller title on mobile */
+  }
+
+  .home-section p {
+    font-size: 1rem; /* Smaller text on mobile */
+  }
+
+  .home-section .analyze-button {
+    font-size: 1.25rem; /* Adjust button size */
+  }
+
+  .video-container video {
+    width: 100%;
+  }
+
+  .about-us-section h2, .tech-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-us-section p, .tech-section p {
+    font-size: 1.2rem;
+  }
+}
+
+
+
+
+
+
