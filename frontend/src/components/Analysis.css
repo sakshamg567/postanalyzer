@@ -1,0 +1,84 @@
+.analysis {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .analysis h1 {
+    font-size: 3rem;  /* Increase the font size for the "Analysis" title */
+    margin-bottom: 3rem;
+    margin-top: 10px;
+  }
+  
+  .analysis h2 {
+    font-size: 2rem;  /* Increase the font size for the subheading */
+    margin-bottom: 2rem;
+  }
+  
+  .analysis label {
+    font-size: 1.25rem;  /* Make the label font larger */
+    color: #d4d4d4;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  #insights-input {
+    width: 100%;
+    max-width: 400px;  /* Restrict input width for better control */
+    padding: 1rem;
+    font-size: 1.25rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+    margin-top: 1rem;
+  }
+  
+  #insights-input:focus {
+    border-color: #4caf50;  /* Change border color on focus */
+  }
+  
+  #insights-input:valid {
+    border-color: #2196f3;  /* Change border color when text is entered */
+  }
+  
+  #insights-input::placeholder {
+    font-style: italic;
+    color: #aaa;
+  }
+  
+  button {
+    padding: 1rem 1rem;
+    background-color: #296270;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 1rem;
+  }
+  
+  button:hover {
+    background-color: #005b4f;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .analysis .insights-container {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  
+  .analysis .insights-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .analysis .insights-container p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  
