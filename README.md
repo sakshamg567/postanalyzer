@@ -17,7 +17,6 @@ The project demonstrates how to:
 
 - **Langflow**: For workflow creation and GPT integration.
 - **DataStax Astra DB**: NoSQL database for data storage and queries.
-- **Python**: For additional scripting (if applicable).
 
 ---
 
