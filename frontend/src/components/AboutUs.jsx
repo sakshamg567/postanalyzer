@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import "./AboutUs.css";
+// eslint-disable-next-line no-unused-vars
+import React, {useState, useEffect} from "react"
+
 
 function AboutUs() {
   const [profiles, setProfiles] = useState([]);
-
   useEffect(() => {
     // GitHub usernames of the people you want to display
     const githubUsers = [
@@ -30,43 +30,21 @@ function AboutUs() {
     fetchProfiles();
   }, []);
 
-  return (
-    <div className="about-us">
+  return(
+    <div id="About-us">
       <h1>About Us</h1>
-      <p>We are a team of enthusiastic developers making the world better.</p>
-
-      <div className="cards-container" style={{ display: "flex", justifyContent: "space-around" }}>
+      <p>We are a team of Passionate Developers, Making products that eases the life of others</p>
+      <div id="profile-container" className="flex flex-row max-h-80 ">
         {profiles.map((profile) => (
-          <div
-            key={profile.id}
-            className="profile-card"
-            style={{
-              width: "200px",
-              border: "1px solid #ccc",
-              borderRadius: "10px",
-              padding: "1rem",
-              textAlign: "center",
-              boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-            }}
-          >
-            <a href={profile.html_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
-              <img
-                src={profile.avatar_url}
-                alt={profile.login}
-                style={{
-                  width: "100px",
-                  height: "100px",
-                  borderRadius: "50%",
-                  objectFit: "cover",
-                  marginBottom: "1rem",
-                }}
-              />
-              <h3>{profile.name || profile.login}</h3>
-              <p>{profile.bio || "No bio available"}</p>
-            </a>
+          <div key={profile.id} id="profile-card">
+              <a href={profile.html_url} target="_blank" rel="noopener noreferrer">
+                <img src={profile.avatar_url} alt={profile.login} />
+                <span>{profile.name || profile.login}</span>
+                <p>{profile.bio || "No bio available"}</p>
+              </a>
           </div>
         ))}
-      </div>
+      </div>  
     </div>
   );
 }
